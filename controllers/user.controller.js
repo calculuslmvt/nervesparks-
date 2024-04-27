@@ -97,6 +97,7 @@ const loginUser = asyncHandler(async (req, res) => {
     }
     
     const cookieOptions = {
+        sameSite: "none", 
         httpOnly:true,
         secure: true
     }

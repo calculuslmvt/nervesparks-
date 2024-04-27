@@ -13,8 +13,7 @@ dotenv.config();
 const port = process.env.PORT;
 
 app.use(cookieParser(
-    undefined, 
-    {sameSite: "none",
+    {sameSite: 'none',
     secure: true }
 ));
 app.use(bodyParser.json());
