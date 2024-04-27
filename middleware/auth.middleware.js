@@ -9,7 +9,7 @@ const verifyUserJWT = asyncHandler(async (req, res, next ) => {
     try {
         
         const token = await req.cookies?.token || "";
-
+        console.log(token); 
         if(!token) {
             throw new APIError(401, "Unauthorized request"); 
         }
