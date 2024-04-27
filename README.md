@@ -175,11 +175,9 @@ The `JWTHandler` utility provides functions for generating JSON Web Tokens (JWT)
 
 These utilities enhance the functionality and maintainability of the Express.js backend server by providing standardized error handling, response formatting, asynchronous route handling, database access, and authentication mechanisms.
 
-Feel free to explore and integrate these utilities into your Express.js application as needed!
-
 --- 
 
-Let me know if you need further assistance or modifications!
+
 
 
 
