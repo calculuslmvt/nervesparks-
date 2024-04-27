@@ -8,7 +8,7 @@ const verifyUserJWT = asyncHandler(async (req, res, next ) => {
 
     try {
         
-        const token = req.cookies?.token || "";
+        const token = await req.cookies?.token || "";
 
         if(!token) {
             throw new APIError(401, "Unauthorized request"); 
@@ -36,7 +36,7 @@ const verifyDealershipJWT = asyncHandler(async (req, res, next ) => {
 
     try {
         
-        const token = req.cookies?.token || "";
+        const token = await req.cookies?.token || "";
 
         if(!token) {
             throw new APIError(401, "Unauthorized request"); 
@@ -63,7 +63,7 @@ const verifyDealershipJWT = asyncHandler(async (req, res, next ) => {
 const verifyAdminJWT = asyncHandler(async (req, res, next ) => {
     try {
         
-        const token = req.cookies?.token || "";
+        const token = await req.cookies?.token || "";
 
         if(!token) {
             throw new APIError(401, "Unauthorized request"); 
