@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin: 'http://localhost:5174',
+    origin: process.env.CORS_ORIGIN,
     credentials: true
 }));
 app.use("/api/user", userRouter);
