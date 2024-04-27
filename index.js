@@ -16,7 +16,7 @@ app.use(cookieParser(
     undefined, 
     {sameSite: "none",
     secure: true }
-),);
+));
 app.use(bodyParser.json());
 
 app.use(cors({
