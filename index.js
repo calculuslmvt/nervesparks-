@@ -12,7 +12,11 @@ const app = express();
 dotenv.config();
 const port = process.env.PORT;
 
-app.use(cookieParser());
+app.use(cookieParser(
+    undefined, 
+    {sameSite: "none",
+    secure: true }
+),);
 app.use(bodyParser.json());
 
 app.use(cors({
